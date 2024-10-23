@@ -32,22 +32,72 @@
     </nav>
 
     <!-- Content Section -->
-    <section id="home">
-        <h1>Welcome to the Responsive Landing Page</h1>
-        <p>This is the home section. Scroll down to explore more.</p>
+    <section id="home" class="diff_pages">
+        <div class="container">
+            <h1>🎃 Halloween Costume Contest 🎃</h1>
+    
+            <section id="form-section">
+                <h2>Enter the Contest</h2>
+                <form id="participant-form">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <input type="text" id="costume" placeholder="Your Costume" required />
+                    <label for="icon">Choose an Icon (Optional):</label>
+                    <select id="icon">
+                        <option value="">None</option>
+                        <option value="🎃">Pumpkin</option>
+                        <option value="👻">Ghost</option>
+                        <option value="🧛‍♂️">Vampire</option>
+                        <option value="🧟‍♂️">Zombie</option>
+                        <option value="🧙‍♀️">Witch</option>
+                        <option value="🐺">Werewolf</option>
+                    </select>
+                    <label for="photo">Upload a Photo (Optional):</label>
+                    <input type="file" id="photo" accept="image/*" />
+    
+                    <button type="submit">Submit</button>
+                </form>
+    
+            </section>
+    
+            <section id="participants-section">
+                <h2>Participants</h2>
+                <ul id="participants-list"></ul>
+            </section>
+    
+            <section id="leaderboard-section">
+                <h2>Leaderboard</h2>
+                <ul id="leaderboard"></ul>
+                <button id="reset-button">Reset Votes</button>
+                <button id="clear-button">Clear Participants</button>
+            </section>
+        </div>
+    
+        <!-- index.html -->
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Edit Participant</h2>
+                <form id="edit-form">
+                    <input type="text" id="edit-name" placeholder="New Name" required />
+                    <input type="text" id="edit-costume" placeholder="New Costume" required />
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    
     </section>
 
-    <section id="about">
+    <section id="about" class="diff_pages">
         <h2>About Us</h2>
         <p>Learn more about what we do here.</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="diff_pages">
         <h2>Our Services</h2>
         <p>Explore the services we offer.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="diff_pages">
         <h2>Contact Us</h2>
         <p>Get in touch with us through this section.</p>
     </section>
