@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Toggle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <span id="logo_span"><img src="images/icons/pumpkin.png" id="nav_icon">COSVOTES</span>
+            <!-- Menu Items -->
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <section id="home">
+        <h1>Welcome to the Responsive Landing Page</h1>
+        <p>This is the home section. Scroll down to explore more.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about what we do here.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>Explore the services we offer.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us through this section.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

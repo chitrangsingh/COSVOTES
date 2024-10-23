@@ -1,0 +1,165 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Menu Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+}
+
+.bar {
+    width: 35px;
+    height: 4px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Menu Styling */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.nav-menu li a:hover {
+    background-color: #f8b400;
+    border-radius: 30px;
+    color: black;
+}
+section {
+    padding: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #ffebcd;
+}
+
+#services {
+    background-color: #dcdcdc;
+}
+
+#contact {
+    background-color: #ffe4e1;
+}
+#nav_icon{
+    width: 30px;
+    height: 30px;
+}
+#logo_span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    font-size: 20px;
+    font-family: "Henny Penny", system-ui;
+    color: #f8b400;
+
+}
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Menu slide animation */
+.nav-menu.show {
+    display: flex;
+    animation: slide-in 0.5s forwards;
+}
+#nav_icon{
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+    justify-self: end;
+    right: 0px;
+    /* margin-left: 50px; */
+}
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(-1%);
+    }
+}
