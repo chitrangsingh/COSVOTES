@@ -115,6 +115,9 @@ body {
 
 #about {
     background-color: #ffebcd;
+    overflow: visible; 
+    position: relative; /* Keep it contained */
+    height: auto; /* Adjust as needed */
 }
 
 #services {
@@ -456,3 +459,79 @@ button {
 		width: 90%;
 	}
 } 
+
+/* about section styling  */
+
+.about-container {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .about-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-family: "Henny Penny", system-ui; ;
+    color: #ff6f00;
+    text-shadow: 5px 5px 10px 10px black;
+  }
+
+  .about-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #ddd;
+  }
+
+  .about-content p {
+    margin-bottom: 20px;
+    color: #6f2f03;
+  }
+  .hover-text {
+    font-size: 2em;
+    margin-top: 100px;
+    cursor: pointer;
+    color: #ff6f00;
+  }
+
+  .about-footer {
+    display: inline;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #ff6f00;
+  }
+
+  #ghost {
+    position: absolute;
+    top: 20px;
+    left: 47%;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+     transform: translateX(50%);
+     transform: translateY(10%);
+  }
+
+  /* Animation for rotating the ghost */
+  .rotate {
+    animation: rotateGhost 2s infinite;
+  }
+
+  /* Rotate left and right animation */
+  @keyframes rotateGhost {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    50% { transform: translateX(-50%) rotate(20deg); }
+    100% { transform: translateX(-50%) rotate(-20deg); }
+  }
+
+  /* Hover effect to show ghost */
+  .about-footer:hover #ghost {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    animation: rotateGhost 2s infinite;
+    width: 400px;
+    height: 400px;
+  }

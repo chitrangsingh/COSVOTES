@@ -1,4 +1,18 @@
 // Smooth scrolling for navigation links
+const hovertext = document.getElementsByClassName("hover-text");
+const ghost = document.getElementById("ghost");
+
+hovertext.addEventListener('mouseover',()=>{
+    ghost.style.opacity = '0';
+    ghost.classList.add('rotate');
+});
+
+hovertext.addEventListener('mouseout',()=>{
+    ghost.style.opacity = '0';
+    ghost.classList.remove('rotate');
+});
+
+// Smooth scrolling for navigation links
 document.querySelectorAll('.nav-menu a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
