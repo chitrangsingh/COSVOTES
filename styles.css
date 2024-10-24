@@ -7,6 +7,9 @@
 html {
     scroll-behavior: smooth;
 }
+.leaderboard-section{
+    position: relative; /* Ensure it stays inside the home section */
+}
 
 .henny-penny-regular {
     font-family: "Henny Penny", system-ui;
@@ -87,6 +90,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden; /* Prevent content from overflowing */
+    position: relative; /* Keep it contained */
+    height: auto; /* Adjust as needed */
+    
 }
 
 #home {
@@ -98,6 +107,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden; /* Prevent content from overflowing */
+    position: relative; /* Keep it contained */
+    height: auto; /* Adjust as needed */
+    
 }
 
 #about {
